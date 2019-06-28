@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackground"
+        android:orientation="vertical"
+        tools:context=".LoginActivity">
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <TextView
+                android:layout_marginTop="70dp"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/login_text"
+                android:textSize="60sp"
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"
+                android:textColor="@color/colorWhite"/>
+    </RelativeLayout>
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_margin="70dp"
+            android:orientation="vertical"
+            android:background="@drawable/round_coner">
+        <EditText
+                android:id="@+id/edUserName"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="username"
+                android:textColorHint="@color/colorForHint"
+                android:singleLine="true" />
+        <EditText
+                android:id="@+id/edPassword"
+                android:layout_margin="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:ellipsize="start"
+                android:gravity="center_horizontal"
+                android:hint="password"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorForHint"
+                android:singleLine="true"/>
+
+    </LinearLayout>
+    <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:cornerRadius="50dp"
+            android:text="Login"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-condensed"
+            android:inputType="textCapSentences"
+            android:textColor="@color/colorWhite"
+            app:theme="@style/Theme.MaterialComponents.Light.DarkActionBar"
+            app:backgroundTint="@color/colorRed"/>
+
+    <com.shobhitpuri.custombuttons.GoogleSignInButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Login with google"
+            android:fontFamily="sans-serif-condensed"
+            android:layout_margin="20dp"
+            android:layout_gravity="center_horizontal"
+            app:isLightTheme="true" />
+
+
+</LinearLayout>
